@@ -321,25 +321,24 @@ class Ui_Dialog(object):
                 else:
                     x = x + 2*n + 1
             x = (x - 14*(2*n + 1) + 2)/2
-            return x
-            #if x == 1:
-            #    return self.result1.text()
-            #elif x == 2:
-            #    return self.result2.text()
-            #elif x == 3:
-            #    return self.result3.text()
-            #elif x == 4:
-            #    return self.result4.text()
-            #elif x == 5:
-            #    return self.result5.text()
-            #elif x == 6:
-            #    return self.result6.text()
-            #elif x == 7:
-            #    return self.result7.text()
-            #elif x == 8:
-            #    return self.result8.text()
-            #else:
-            #    return self.result9.text()
+            if x == 1:
+                return self.result1.text()
+            elif x == 2:
+                return self.result2.text()
+            elif x == 3:
+                return self.result3.text()
+            elif x == 4:
+                return self.result4.text()
+            elif x == 5:
+                return self.result5.text()
+            elif x == 6:
+                return self.result6.text()
+            elif x == 7:
+                return self.result7.text()
+            elif x == 8:
+                return self.result8.text()
+            else:
+                return self.result9.text()
 
         self.resRun1.clicked.connect(lambda: self.matchResult.setText(self.name1.text()+": "+str(int(Answer(int(self.numEdit.value()), 1)))))
         self.resRun2.clicked.connect(lambda: self.matchResult.setText(self.name2.text()+": "+str(int(Answer(int(self.numEdit.value()), 2)))))
