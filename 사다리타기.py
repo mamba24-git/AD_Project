@@ -340,15 +340,15 @@ class Ui_Dialog(object):
             else:
                 return self.result9.text()
 
-        self.resRun1.clicked.connect(lambda: self.matchResult.setText(self.name1.text()+": "+str(int(Answer(int(self.numEdit.value()), 1)))))
-        self.resRun2.clicked.connect(lambda: self.matchResult.setText(self.name2.text()+": "+str(int(Answer(int(self.numEdit.value()), 2)))))
-        self.resRun3.clicked.connect(lambda: self.matchResult.setText(self.name3.text()+": "+str(int(Answer(int(self.numEdit.value()), 3)))))
-        self.resRun4.clicked.connect(lambda: self.matchResult.setText(self.name4.text()+": "+str(int(Answer(int(self.numEdit.value()), 4)))))
-        self.resRun5.clicked.connect(lambda: self.matchResult.setText(self.name5.text()+": "+str(int(Answer(int(self.numEdit.value()), 5)))))
-        self.resRun6.clicked.connect(lambda: self.matchResult.setText(self.name6.text()+": "+str(int(Answer(int(self.numEdit.value()), 6)))))
-        self.resRun7.clicked.connect(lambda: self.matchResult.setText(self.name7.text()+": "+str(int(Answer(int(self.numEdit.value()), 7)))))
-        self.resRun8.clicked.connect(lambda: self.matchResult.setText(self.name8.text()+": "+str(int(Answer(int(self.numEdit.value()), 8)))))
-        self.resRun9.clicked.connect(lambda: self.matchResult.setText(self.name9.text()+": "+str(int(Answer(int(self.numEdit.value()), 9)))))
+        self.resRun1.clicked.connect(lambda: self.matchResult.setText(self.name1.text()+": "+str(Answer(int(self.numEdit.value()), 1))))
+        self.resRun2.clicked.connect(lambda: self.matchResult.setText(self.name2.text()+": "+str(Answer(int(self.numEdit.value()), 2))))
+        self.resRun3.clicked.connect(lambda: self.matchResult.setText(self.name3.text()+": "+str(Answer(int(self.numEdit.value()), 3))))
+        self.resRun4.clicked.connect(lambda: self.matchResult.setText(self.name4.text()+": "+str(Answer(int(self.numEdit.value()), 4))))
+        self.resRun5.clicked.connect(lambda: self.matchResult.setText(self.name5.text()+": "+str(Answer(int(self.numEdit.value()), 5))))
+        self.resRun6.clicked.connect(lambda: self.matchResult.setText(self.name6.text()+": "+str(Answer(int(self.numEdit.value()), 6))))
+        self.resRun7.clicked.connect(lambda: self.matchResult.setText(self.name7.text()+": "+str(Answer(int(self.numEdit.value()), 7))))
+        self.resRun8.clicked.connect(lambda: self.matchResult.setText(self.name8.text()+": "+str(Answer(int(self.numEdit.value()), 8))))
+        self.resRun9.clicked.connect(lambda: self.matchResult.setText(self.name9.text()+": "+str(Answer(int(self.numEdit.value()), 9))))
 
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
